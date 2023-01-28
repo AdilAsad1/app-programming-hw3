@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="232dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:ems="30"
+        android:inputType="textPersonName"
+        android:text="  Email" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="50"
+        android:inputType="textPersonName"
+        android:text="  Complexity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="407dp"
+        android:layout_height="44dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="   Data Structures"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Get Min"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="240dp"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:text="Insert"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="213dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:background="@null"
+        android:inputType="textPersonName"
+        android:text="   Operations"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="RadioButton"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="227dp"
+        android:layout_height="33dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Case"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="RadioButton"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
