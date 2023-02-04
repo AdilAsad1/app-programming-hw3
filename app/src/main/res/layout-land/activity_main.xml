@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".content_main">
+
 
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:text="@string/email_heading"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
@@ -22,101 +21,113 @@
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
+        android:layout_width="240dp"
         android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:autofillHints="emailAddress"
         android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextEmailSubject"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextEmailSubject"
-        android:layout_width="0dp"
+        android:layout_width="240dp"
         android:layout_height="40dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="5dp"
         android:layout_weight="1"
         android:autofillHints=""
         android:hint="@string/email_subject"
         android:inputType="textEmailSubject"
-        app:layout_constraintBottom_toTopOf="@+id/textViewComplexity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintStart_toEndOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewComplexity"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:text="@string/complexity"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailSubject" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
 
     <TextView
         android:id="@+id/textViewDataStructures"
         android:layout_width="0dp"
         android:layout_height="26dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:text="@string/data_structures"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOperations"
+        app:layout_constraintStart_toEndOf="@+id/textViewComplexity"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textViewOperations"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="@string/operations"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewComplexity" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewDataStructures" />
+
+    <TextView
+        android:id="@+id/textViewCase"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/case_heading"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOperations" />
 
     <Spinner
         android:id="@+id/dataStructuresSpinner"
         android:layout_width="0dp"
         android:layout_height="34dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="30dp"
         android:entries="@array/data_structures"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDataStructures" />
-
-    <TextView
-        android:id="@+id/textViewOperations"
-        android:layout_width="0dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:text="@string/operations"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dataStructuresSpinner" />
+        app:layout_constraintStart_toEndOf="@+id/textViewDataStructures"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <CheckBox
         android:id="@+id/checkBoxGetMin"
         android:layout_width="90dp"
         android:layout_height="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/checkbox_get_min"
         app:layout_constraintEnd_toStartOf="@+id/checkBoxInsert"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewOperations" />
+        app:layout_constraintStart_toEndOf="@+id/textViewOperations"
+        app:layout_constraintTop_toBottomOf="@+id/dataStructuresSpinner" />
 
     <CheckBox
         android:id="@+id/checkBoxInsert"
         android:layout_width="90dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/checkbox_insert"
         app:layout_constraintEnd_toStartOf="@+id/checkBoxSearch"
         app:layout_constraintStart_toEndOf="@+id/checkBoxGetMin"
@@ -126,72 +137,60 @@
         android:id="@+id/checkBoxSearch"
         android:layout_width="90dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="30dp"
         android:text="@string/checkbox_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkBoxInsert"
         app:layout_constraintTop_toBottomOf="@+id/dataStructuresSpinner" />
 
-    <TextView
-        android:id="@+id/textViewCase"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_weight="1"
-        android:text="@string/case_heading"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxGetMin" />
-
     <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="430dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
         android:orientation="horizontal"
-        android:checkedButton="@+id/radioButtonAvgCase"
-        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCase">
+        app:layout_constraintStart_toEndOf="@+id/textViewCase"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGetMin">
 
         <RadioButton
-            android:id="@+id/radioButtonAvgCase"
+            android:id="@+id/radioButton3"
             android:layout_width="120dp"
             android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="116dp"
             android:text="@string/avg_case" />
 
         <RadioButton
-            android:id="@+id/radioButtonWorstCase"
+            android:id="@+id/radioButton4"
             android:layout_width="110dp"
             android:layout_height="40dp"
-            android:layout_marginStart="30dp"
-            android:text="@string/worst_case" />
+            android:layout_marginTop="14dp"
+            android:text="@string/worst_case"
+            tools:layout_editor_absoluteX="508dp" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
         android:layout_weight="1"
         android:text="@string/result_heading"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewComplexity" />
 
     <TextView
         android:id="@+id/textViewResultTo"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
         android:layout_weight="1"
         android:text="@string/result_to"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
@@ -199,11 +198,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
 
     <TextView
-        android:id="@+id/textViewResultSubject"
+        android:id="@+id/textViewResultFrom"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
         android:layout_weight="1"
         android:text="@string/result_subject"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
@@ -214,14 +213,16 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/button"
         android:contentDescription="@string/email_icon_description"
         android:paddingHorizontal="15dp"
         android:paddingVertical="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSearch"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 

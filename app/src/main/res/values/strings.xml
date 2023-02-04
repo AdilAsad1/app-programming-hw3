@@ -1,10 +1,28 @@
 <resources>
-    <string name="app_name">Homework2</string>
-    <string-array name="DataStructures">
+    <string name="app_name">Big O</string>
+    <string-array name="data_structures">
         <item>2-3 Tree</item>
         <item>Binary Search Tree</item>
         <item>Hash Table</item>
         <item>Linked List</item>
         <item>Min Heap</item>
     </string-array>
+    <string name="email_heading">Email</string>
+    <string name="email_hint">Email Address</string>
+    <string name="email_subject">Email Subject</string>
+    <string name="complexity">Complexity</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="operations">Operations</string>
+    <string name="checkbox_get_min">Get Min</string>
+    <string name="checkbox_insert">Insert</string>
+    <string name="checkbox_search">Search</string>
+    <string name="case_heading">Case</string>
+    <string name="avg_case">Average Case</string>
+    <string name="worst_case">Worst Case</string>
+    <string name="result_heading">Result</string>
+    <string name="result_to">To:</string>
+    <string name="result_subject">Subject:</string>
+    <string name="email_icon_description">Email Icon</string>
+
+
 </resources>
